@@ -15,4 +15,9 @@ jobs:
     name: Verify
     uses: slawekjaranowski/maven-actions-shared/.github/workflows/maven-verify-with-its.yml@main
     with:
-      matrix-exclude: '[ {"jdk": "8"} ]'
+      # exclude jdk8 form all build and maven 3.6.3 with jdk 17
+      matrix-exclude: >
+        [
+          {"jdk": "8"},
+          {"mvn": "3.6.3", "jdk": "17"}
+        ]

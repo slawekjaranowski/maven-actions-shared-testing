@@ -13,4 +13,4 @@ on:
 jobs:
   build:
     name: Verify
-    uses: slawekjaranowski/.github/workflows/maven-verify-with-its.yml@main
+    uses: slawekjaranowski/maven-actions-shared/.github/workflows/maven-verify-with-its.yml@main

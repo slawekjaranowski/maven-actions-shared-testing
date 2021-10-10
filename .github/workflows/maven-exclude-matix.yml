@@ -15,4 +15,6 @@ jobs:
     name: Verify
     uses: slawekjaranowski/maven-actions-shared/.github/workflows/maven-verify-with-its.yml@main
     with:
-      matrix-exclude: '[ {"jdk": "8"} ]'
+      matrix-exclude:
+        - jdk: 8
+        - jkd: 17

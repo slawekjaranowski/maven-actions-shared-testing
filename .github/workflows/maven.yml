@@ -6,8 +6,6 @@ on:
       - dependabot/**
 
   pull_request:
-    branches:
-      - main
 
 
 jobs:

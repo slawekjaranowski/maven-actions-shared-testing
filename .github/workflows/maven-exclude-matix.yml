@@ -6,8 +6,6 @@ on:
       - dependabot/**
 
   pull_request:
-    branches:
-      - main
 
 
 jobs:
@@ -17,7 +15,4 @@ jobs:
     with:
       # exclude jdk8 form all build and maven 3.6.3 with jdk 17
       matrix-exclude: >
-        [
-          {"jdk": "8"},
-          {"mvn": "3.6.3", "jdk": "17"}
-        ]
+        [ {"jdk": "8"} ]
